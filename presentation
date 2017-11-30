@@ -1,0 +1,45 @@
+Hello everyone, I'm Tung.
+I choose a topic about Software Engineer.
+So, today, I'm going to introduce about Principles of Package Design in Agile Development. 
+As software application grow in size and complexity, 
+they require some kind of high-level organization.
+Classes, while a very convenient unit for organizing small application,
+are not enough in large application. 
+Something larger than class is needed.
+That something is called a package. 
+
+
+In UML, packages can be used as containers for groups of classes. 
+By grouping classes into packages, 
+we can reason about the design at a high level of abstraction,
+higher than classes can do. 
+
+We can also use the packages to manage the development 
+and distribution of the software. 
+The main goal is to partition the classes in an application according
+to some criteria, and then allocate the classes 
+in those paritions to packages. 
+
+But classes often have dependencies on other classes,
+and these dependencies will very often cross package boundaries. 
+Thus, the packages will have dependency relationships with each other. 
+The relationships between packages is 
+high level organization of application,
+and need to be managed.
+
+We have large number of questions when allocating classes to packages.
+For example:
++ What are the principles for allocating classes to packages?
++ What design principles govern the relationships between packages?
++ Should packages be designed before classes (top down)? Or should be designed before packages (bottom up)?
++ How are packages are physically represented? In C++? In Java? In the development environment?
++ Once created, what is the purpose will we put these packages.
+
+1. Granularity: The Principles of Package Cohesion.
+    1.1 The Reuse-Realese Equivalent Principle (REP). 
+    1.2 The Common-Reuse Principle (CRP). 
+    1.3 The Common-Closure Principle (CCP). 
+2. Stability: The Principles of Package Coupling.
+    2.1 The Acyclic-Dependencies Principle (ADP).
+    2.2 The Stable-Dependencies Principle (SDP). 
+    2.3 The Stable-Abstraction Principle (SAP). 
